@@ -1,7 +1,7 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require 'chef/handler/mail/version'
+require 'chef/mail/version'
 
 Gem::Specification.new do |s|
   s.name = 'chef-mail'
