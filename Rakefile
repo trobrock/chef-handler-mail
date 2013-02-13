@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
-require "chef/handler/mail/version"
+require "chef/mail/version"
 
 GEM_NAME = "chef-mail"
 GEM_VERSION = MailHandler::VERSION
