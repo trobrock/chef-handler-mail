@@ -21,10 +21,10 @@ require 'pony'
 class MailHandler < Chef::Handler
   attr_reader :options
   def initialize(opts = {})
-    @options = {
+    @options = Mash.new({
       :to_address => "root",
       :template_path => File.join(File.dirname(__FILE__), "mail.erb")
-    }
+    })
     @options.merge! opts
   end
 
